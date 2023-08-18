@@ -1,0 +1,1 @@
+Se visualizaría los screen de la aplicación basado en los activities
