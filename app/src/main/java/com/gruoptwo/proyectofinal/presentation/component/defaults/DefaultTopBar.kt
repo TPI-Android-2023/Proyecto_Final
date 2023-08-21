@@ -18,7 +18,6 @@ import androidx.compose.ui.graphics.Color.Companion.Yellow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import com.vorue.listgame.presentation.ui.theme.ListGameTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -49,7 +48,7 @@ fun DefaultTopBar(
 @Composable
 @Preview(showBackground = true)
 fun DefaultTopBarPreview() {
-    ListGameTheme {
+     MaterialTheme() {
         DefaultTopBar(title = "Title", upAvailable = true)
 
     }

@@ -23,6 +23,7 @@
 
 @rem Set local scope for the variables with windows NT shell
 if "%OS%"=="Windows_NT" setlocal
+@rem ##########################################################################
 
 set DIRNAME=%~dp0
 if "%DIRNAME%" == "" set DIRNAME=.
