@@ -1,9 +1,9 @@
-name: Android Testing CI # <-- This is the name of the workflow
-on: [ push ]
+name: Android Testing CI
+on: [push]
 
 jobs:
   test:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - name: set up JDK 17
@@ -16,6 +16,6 @@ jobs:
       - name: Unit Test
         run: ./gradlew testDebugUnitTest
 
-      - name: Android Test report
-        uses: asadmansr/android-test-report@v1.2.0 # <-- This is the action to run
-        if: ${{ always() }} # <-- This is the condition to run this step
+      - name: Android Test Report
+        uses: asadmansr/android-test-report-action@v1.2.0
+        if: ${{ always() }}
